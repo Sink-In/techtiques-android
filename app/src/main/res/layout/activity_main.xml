@@ -10,36 +10,35 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"
+        android:background="@color/primaryColor"
         android:orientation="horizontal"
-        android:padding="16dp"
-        android:background="@drawable/gradient">
+        android:padding="16dp">
 
         <View
             android:layout_width="28dp"
             android:layout_height="16dp"
-            android:background="@drawable/hamburger"
-            />
+            android:background="@drawable/hamburger" />
+
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:textColor="#ffffff"
             android:layout_marginTop="-8dp"
+            android:gravity="center_horizontal"
             android:text="Techtiques"
-            android:textSize="24sp"/>
+            android:textColor="#eee"
+            android:textSize="@dimen/header_font_size"
+            android:layout_weight="1"/>
+
+        <View
+            android:layout_width="28dp"
+            android:layout_height="16dp" />
 
     </LinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/colorWhite">
-    </View>
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="-60dp">
+        android:layout_marginTop="@dimen/first_entity_margin">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -47,13 +46,13 @@
             android:orientation="vertical"
             android:padding="6dp">
 
-            <android.support.v7.widget.CardView
-                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                card_view:cardUseCompatPadding="true"
-                card_view:cardElevation="8dp"
-                card_view:cardCornerRadius="8dp">
+                android:layout_margin="@dimen/cardview_default_margin"
+                card_view:cardCornerRadius="@dimen/cardview_border_radius"
+                card_view:cardElevation="@dimen/cardview_elevation"
+                card_view:cardUseCompatPadding="true">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -63,12 +62,11 @@
                     <TextView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:text="PHP"
-                        android:gravity="center"
-                        android:textColor="#6382f9"
-                        android:textSize="40sp"
                         android:layout_margin="16dp"
-                        />
+                        android:gravity="center"
+                        android:text="PHP"
+                        android:textColor="#6382f9"
+                        android:textSize="40sp" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -78,24 +76,82 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Title - PHP Hello WorldTitle"
+                            android:layout_margin="@dimen/cardview_title_margin"
+                            android:layout_marginBottom="@dimen/cardview_title_margin"
+                            android:layout_marginLeft="@dimen/cardview_title_margin"
+                            android:layout_marginRight="@dimen/cardview_title_margin"
+                            android:layout_marginTop="@dimen/cardview_title_margin"
                             android:gravity="top"
-                            android:textColor="#6382f9"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            android:textSize="20sp"
-                            />
+                            android:text="Title - PHP Hello WorldTitle"
+                            android:textColor="@color/secondaryTextColor"
+                            android:textSize="24sp" />
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:text="PHP"
-                            android:gravity="bottom"
-                            android:textColor="#6c757d"
+                            android:layout_marginBottom="10dp"
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
+                            android:alpha="5"
+                            android:gravity="bottom"
+                            android:text="PHP" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/cardview_default_margin"
+                android:layout_marginRight="@dimen/cardview_default_margin"
+                card_view:cardCornerRadius="@dimen/cardview_border_radius"
+                card_view:cardElevation="@dimen/cardview_elevation"
+                card_view:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="16dp"
+                        android:gravity="center"
+                        android:text="PHP"
+                        android:textColor="#6382f9"
+                        android:textSize="40sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/cardview_title_margin"
+                            android:layout_marginBottom="@dimen/cardview_title_margin"
+                            android:layout_marginLeft="@dimen/cardview_title_margin"
+                            android:layout_marginRight="@dimen/cardview_title_margin"
+                            android:layout_marginTop="@dimen/cardview_title_margin"
+                            android:gravity="top"
+                            android:text="Title - PHP Hello WorldTitle"
+                            android:textColor="@color/secondaryTextColor"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
                             android:layout_marginBottom="10dp"
-                            />
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:alpha="5"
+                            android:gravity="bottom"
+                            android:text="PHP" />
 
                     </LinearLayout>
 
