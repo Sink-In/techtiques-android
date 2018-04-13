@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="first_entity_margin">-60dp</dimen>
+    <dimen name="first_entity_margin">-40dp</dimen>
     <dimen name="cardview_title_margin">12dp</dimen>
     <dimen name="cardview_default_margin">0dp</dimen>
     <dimen name="cardview_border_radius">8dp</dimen>
-    <dimen name="cardview_elevation">8dp</dimen>
+    <dimen name="cardview_elevation">4dp</dimen>
     <dimen name="header_font_size">28sp</dimen>
 </resources>
